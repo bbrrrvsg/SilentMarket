@@ -83,7 +83,7 @@ public class marketDao {
 
             }
         }catch (SQLException e){
-            System.out.println("sql 문법 오류 ");
+            System.out.println("sql 문법 오류 "+e);
         }
         return pd;
     }// m end

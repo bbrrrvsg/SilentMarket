@@ -11,7 +11,8 @@ create table product(
     price int default 0,
     pwd varchar(10),
     pnumber char(13),
-    state char(3) default "판매중"
+    state char(3) default "판매중",
+    pdate datetime default now()
 );
 INSERT INTO product (nick, pname, pcomment, price, pwd, pnumber, state) VALUES
 ('hanseung', '아이폰 14', '거의 새제품입니다. 박스 포함.', 850000, '1234', '2026021200011', '판매중'),
